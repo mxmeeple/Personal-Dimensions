@@ -10,13 +10,11 @@ buildscript {
         classpath 'org.parchmentmc:librarian:1.+'
     }
 }
-// Only edit below this line, the above code adds and enables the necessary things for Forge to be setup.
-plugins {
-    id 'eclipse'
-    id 'maven-publish'
-}
 apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle' // MUST be after gradle
+apply plugin: 'eclipse'
+apply plugin: 'maven-publish'
+
 
 version = '0.1-1.18.2'
 group = 'com.mxmeeple.personaldims' // http://maven.apache.org/guides/mini/guide-naming-conventions.html
